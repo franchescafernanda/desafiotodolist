@@ -6,11 +6,22 @@
   <title>Desafío lista</title>
   <link rel="stylesheet" href="./assets/css/styles.css">
 </head>
+<style>
+  .boton-rojo {
+      background-color: red;
+      color: white;
+      padding: 4px 4px;
+      border: none;
+      border-radius: 5px;
+  }
+</style>
+
 <body>
   <h2>Lista de Tareas</h2>
   <h5>Nueva Tarea</h5>
   <input type="text" id="tareaInput">
   <button onclick="agregarTarea()">Agregar</button>
+  <!--<h4>Tareas ID</h4> no me estaba funcionando el ponerlo a la misma altura del texto-->
   <ul id="listaTareas"></ul>
   <p>Total: <span id="totalTareas">0</span></p>
   <p>Realizadas: <span id="totalTareasRealizadas">0</span></p>

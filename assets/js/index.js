@@ -2,7 +2,7 @@ let tareas = [
     { id: 16, descripcion: "Hacer mercado", completado: false },
     { id: 60, descripcion: "Estudiar para la prueba", completado: false },
     { id: 24, descripcion: "Sacar a pasear a tobby", completado: false }
-  ];
+    ];
 
   function actualizarLista() {
     const listaTareas = document.getElementById("listaTareas");
@@ -26,9 +26,11 @@ let tareas = [
 
       /*función para poder borrar por medio del botón*/
       const borrarBoton = document.createElement("button");
-      borrarBoton.textContent = "X";
+      borrarBoton.textContent = "X"; 
       borrarBoton.addEventListener("click", () => borrarTarea(index));
       li.appendChild(borrarBoton);
+
+      borrarBoton.classList.add("boton-rojo");
 
       if (tarea.completado) {
         li.classList.add("completed");
@@ -45,7 +47,7 @@ let tareas = [
   function agregarTarea() {
     const tareaInput = document.getElementById("tareaInput");
     const nuevaTarea = {
-      id: Date.now(), // Generar un ID único
+      id: Date.now(), // date.now es para crear un ID nuevo
       descripcion: tareaInput.value,
       completado: false
     };
@@ -65,5 +67,14 @@ let tareas = [
     actualizarLista();
   }
 
-  // Mostrar la lista inicial
+  /* Mostrar la lista con la que comence*/
   actualizarLista();
+
+
+
+/*1. al escribir en input, agregar tarea
+2. al apretar X borrar tareas
+3. Contar las tareas
+4. marcar como completada con el boton 
+5. ir contando tareas listas 
+6. En el index se deben mostrar las 3 principales tareas*/
