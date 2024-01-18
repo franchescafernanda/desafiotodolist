@@ -30,7 +30,7 @@ let tareas = [
       borrarBoton.addEventListener("click", () => borrarTarea(index));
       li.appendChild(borrarBoton);
 
-      borrarBoton.classList.add("boton-rojo");
+      borrarBoton.classList.add("boton-rojo"); //agregue una clase para poder cambiar color con styless desde html
 
       if (tarea.completado) {
         li.classList.add("completed");
@@ -72,9 +72,11 @@ let tareas = [
 
 
 
-/*1. al escribir en input, agregar tarea
+/*
+1. al escribir en input, agregar tarea
 2. al apretar X borrar tareas
 3. Contar las tareas
 4. marcar como completada con el boton 
 5. ir contando tareas listas 
-6. En el index se deben mostrar las 3 principales tareas*/
+6. En el index se deben mostrar las 3 principales tareas
+*/
