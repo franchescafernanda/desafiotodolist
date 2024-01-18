@@ -1,0 +1,13 @@
+body {
+    padding: 10px;
+    margin: 0;
+    font-family: "Roboto", sans-serif, monospace;
+    background-color: rgb(210, 207, 207);
+}
+
+
+button {
+    background-color: rgb(76, 188, 76);
+    color: white;
+    border: 1px solid green;
+}
